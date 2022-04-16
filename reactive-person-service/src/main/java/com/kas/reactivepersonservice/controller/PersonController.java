@@ -10,6 +10,7 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequestMapping("/persons")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200")
 public class PersonController {
     private final PersonService personService;
 
